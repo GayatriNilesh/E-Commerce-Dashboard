@@ -1,0 +1,158 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "Essence Mascara Lash Princess",
+            "category": "beauty",
+            "price": 9.99,
+            "weight": 4,
+            "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 3,
+                    "comment": "Would not recommend!"
+                },
+                {
+                    "rating": 4,
+                    "comment": "Very satisfied!"
+                },
+                {
+                    "rating": 5,
+                    "comment": "Highly impressed!"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Eyeshadow Palette with Mirror",
+            "description": "The Eyeshadow Palette with Mirror offers a versatile range of eyeshadow shades for creating stunning eye looks. With a built-in mirror, it's convenient for on-the-go makeup application.",
+            "category": "beauty",
+            "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp",
+            "weight": 9,
+            "availabilityStatus": "In Stock",
+            "price":89,
+            "reviews": [
+                {
+                    "rating": 5,
+                    "comment": "Great product!"
+                },
+                {
+                    "rating": 4,
+                    "comment": "Awesome product!"
+                },
+                {
+                    "rating": 1,
+                    "comment": "Poor quality!"
+                }
+            ]
+        },
+        {
+      "id": 3,
+      "title": "Powder Canister",
+      "category": "beauty",
+      "price": 14.99,
+      "weight": 8,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/powder-canister/thumbnail.webp",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 4,
+          "comment": "Would buy again!"
+          
+        },
+        {
+          "rating": 5,
+          "comment": "Highly impressed!"
+          
+        },
+        {
+          "rating": 1,
+          "comment": "Very dissatisfied!"
+
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Calvin Klein CK One",
+     
+      "category": "fragrances",
+      "price": 49.99,
+      
+      "weight": 7,
+      
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 2,
+          "comment": "Very disappointed!"
+        },
+        {
+          "rating": 4,
+          "comment": "Fast shipping!",
+          "date": "2025-04-30T09:41:02.053Z"
+        },
+        {
+          "rating": 3,
+          "comment": "Not as described!"
+        }
+      ],
+     
+      "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp"
+    },
+    {
+      "id": 7,
+      "title": "Chanel Coco Noir Eau De",
+      
+      "category": "fragrances",
+      "price": 129.99,
+      "weight": 7,
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 4,
+          "comment": "Highly impressed!"
+        },
+        {
+          "rating": 5,
+          "comment": "Awesome product"
+        },
+        {
+          "rating": 5,
+          "comment": "Very happy with my purchase!"
+        }
+      ],
+      
+      "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/thumbnail.webp"
+    },
+    {
+      "id": 8,
+      "title": "Dior J'adore",
+     
+      "category": "fragrances",
+      "price": 89.99,
+     
+      "weight": 4,
+      
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Great value for money!"
+        },
+        {
+          "rating": 4,
+          "comment": "Great value for money"
+        },
+        {
+          "rating": 4,
+          "comment": "Great product!"
+        }
+      ],
+     
+      "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/thumbnail.webp"
+    }
+
+    ]
+}

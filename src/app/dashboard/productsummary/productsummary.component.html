@@ -1,0 +1,18 @@
+<div class="card-container">
+  <mat-card class="product-card" appearance="outlined" *ngFor="let product of productList ">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{product.title}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image [src]="product.thumbnail">
+    <mat-card-content>
+    </mat-card-content>
+    <mat-card-actions>
+      <div class="row">
+          <span class="">Category -</span>&nbsp;&nbsp;<span class="">{{product.category | titlecase}}</span>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  
+          <span class="">Price -</span>&nbsp;&nbsp;<span class="">{{product.price | currency }}</span>&nbsp;&nbsp;
+         <span class="align"><button class="">Buy Now</button></span> 
+      </div>
+    </mat-card-actions>
+  </mat-card>
+</div>

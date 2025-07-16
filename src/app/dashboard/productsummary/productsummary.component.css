@@ -1,0 +1,13 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:15px
+
+}
+.product-card {
+    width: 300px;
+}
+.align{
+    float: inline-end;
+}
