@@ -12,6 +12,7 @@ import { provideNativeDateAdapter } from '@angular/material/core';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { FormsModule } from '@angular/forms';
 import { DataService } from '../../services/data.service';
+import { CommonModule } from '@angular/common';
 
 
 
@@ -23,7 +24,8 @@ import { DataService } from '../../services/data.service';
     MatInputModule,
     MatIconModule,
     MatDatepickerModule,
-    FormsModule
+    FormsModule,
+    CommonModule
   ],
    providers: [provideNativeDateAdapter()],
   templateUrl: './sidebar.component.html',

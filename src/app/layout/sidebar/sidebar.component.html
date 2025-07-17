@@ -2,17 +2,23 @@
     <mat-toolbar color="primary" class="example-toolbar">
         <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
         <h1 class="example-app-name">E-Commernce Dashboard</h1>
-        <div class="searchelement"> <mat-form-field>
-                <input matInput type="search" [(ngModel)]="searchValue" (input)="filterProducts(searchValue)"
-                    placeholder="Search...">
-                <mat-icon matSuffix (click)="clearSearch()">clear</mat-icon>
-            </mat-form-field>
-        </div>
+
     </mat-toolbar>
     <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
         <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches"
             fixedTopGap="56">
             <mat-nav-list>
+                <div class="searchelement">
+                    <mat-form-field appearance="outline" class="search-field">
+                        <mat-icon matPrefix *ngIf="!searchValue">search</mat-icon>
+
+                        <input matInput placeholder="Search..." [(ngModel)]="searchValue" (input)="filterProducts(searchValue)" />
+
+                        <button mat-icon-button *ngIf="searchValue" matSuffix aria-label="Clear" (click)="clearSearch()">
+                            <mat-icon>close</mat-icon>
+                        </button>
+                    </mat-form-field>
+                </div>
                 <div class="element">
                     <div><a routerLink="/dashboard">Dashboard</a></div>
                     <div class=""><a routerLink="/transaction">Transactions</a></div>
