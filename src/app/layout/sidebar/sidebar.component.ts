@@ -1,5 +1,5 @@
 import { MediaMatcher } from '@angular/cdk/layout';
-import { ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
+import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
@@ -9,7 +9,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { provideNativeDateAdapter } from '@angular/material/core';
-import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 import { FormsModule } from '@angular/forms';
 import { DataService } from '../../services/data.service';
 import { CommonModule } from '@angular/common';
@@ -27,29 +27,32 @@ import { CommonModule } from '@angular/common';
     FormsModule,
     CommonModule
   ],
-   providers: [provideNativeDateAdapter()],
+  providers: [provideNativeDateAdapter()],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.css'
 })
-export class SidebarComponent implements OnDestroy {
+export class SidebarComponent implements OnInit, OnDestroy {
   mobileQuery!: MediaQueryList;
-  searchInput!:string
+  searchInput!: string
   private _mobileQueryListener: () => void;
   searchValue!: string;
+  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher, private dataService: DataService) {
 
-  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher, private dataService:DataService) {
-
-    this.mobileQuery = media.matchMedia('(max-width: 400px)');
+    this.mobileQuery = media.matchMedia('(max-width: 700px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
   }
-     clearSearch() {
-        this.dataService.searchData('')
-      }
-       filterProducts(searchValue:string) {
-    this.dataService.searchData(searchValue)
-    
+
+  ngOnInit(): void {
   }
-  
+
+  clearSearch() {
+    this.dataService.searchData('')
+  }
+  filterProducts(searchValue: string) {
+    this.dataService.searchData(searchValue)
+
+  }
+
   ngOnDestroy(): void {
   }
 }
